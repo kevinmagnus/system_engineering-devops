@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 # A Bash script that displays PID and process name of bash processes
-pgrep -a bash
+for pid in $(pidof bash); do
+  echo "$pid /bin/bash"
+done

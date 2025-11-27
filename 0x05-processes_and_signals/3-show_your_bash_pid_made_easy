@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # A Bash script that displays PID and process name of bash processes
 for pid in $(pidof bash); do
-  printf "%d /bin/bash\n" $pid
+  printf "%d /bin/bash\n" "$pid"
 done

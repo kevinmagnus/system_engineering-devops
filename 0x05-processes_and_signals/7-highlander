@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Displays "To infinity and beyond" indefinitely and handles SIGTERM signal
+
+# Trap SIGTERM signal and display custom message instead of terminating
+trap 'echo "I am invincible!!!"' SIGTERM
+
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
